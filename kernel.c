@@ -16,7 +16,7 @@ void start(void) {
        * by creating a local variable of 0xFFF06CD0 bytes in size,
        * the compiler will subtract this size from the ESP register,
        * causing a 32bit overflow, which will effectively set
-       * the stack pointer to 0x100028 - 8 bytes from the top of our stack.
+       * the stack pointer to 0x100228 - 8 bytes from the top of our stack.
     */
     unsigned char _shift[0xFFF06CD0];
     kmain();
